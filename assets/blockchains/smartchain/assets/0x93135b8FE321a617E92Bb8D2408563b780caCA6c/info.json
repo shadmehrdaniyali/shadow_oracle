@@ -1,0 +1,8 @@
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "decimals": 6,
+  "website": "https://shadowusdt.com",
+  "description": "Shadow-mirrored version of USDT with price and logo synced via private oracle.",
+  "logoURI": "http://localhost:3000/assets/blockchains/smartchain/assets/0x93135b8FE321a617E92Bb8D2408563b780caCA6c/logo.png"
+}
