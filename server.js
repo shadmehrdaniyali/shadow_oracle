@@ -20,9 +20,9 @@ db.get(`SELECT COUNT(*) as count FROM price_data`, (err, row) => {
   }
 });
 
-app.use('assets', express.static('assets'));
+app.use('/assets', express.static('assets'));
 
-app.get('price', (req, res) => {
+app.get('/price', (req, res) => {
   db.get(
     `SELECT price_usd FROM price_data ORDER BY timestamp DESC LIMIT 1`,
     (err, row) => {
@@ -33,6 +33,7 @@ app.get('price', (req, res) => {
     }
   );
 });
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server is running...");
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
