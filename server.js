@@ -33,7 +33,6 @@ app.get('/price', (req, res) => {
     }
   );
 });
-
-app.listen(PORT, () => {
-  console.log(\`Oracle API running on port \${PORT}\`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server is running...");
 });
